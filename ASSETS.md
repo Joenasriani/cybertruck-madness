@@ -15,8 +15,8 @@ It is intentionally conservative: when provenance, ownership, or redistribution 
 
 | File | Current role | Provenance | Redistribution rights |
 |---|---|---|---|
-| `fbx/cybertruck.glb` | Main Cybertruck vehicle model | TurboSquid product 1705879, creator/uploader **Bryancr** | **Editorial Uses Only**; not cleared for normal game use or open redistribution without additional permission |
-| `fbx/moto.fbx` | Motorcycle model / legacy asset | Not documented in repository | Unverified |
+| `fbx/cybertruck.glb` | Repository asset; **not referenced by the current runtime code** | TurboSquid product 1705879, creator/uploader **Bryancr** | **Editorial Uses Only**; not cleared for normal game use or open redistribution without additional permission |
+| `fbx/moto.fbx` | **Current runtime player vehicle** | Git history shows it was previously named `Cybertruck.fbx`; original external source/license is not documented in the repository | Unverified |
 
 ## Audio
 
@@ -74,9 +74,9 @@ Checked against Suno's current Terms of Service and Help Center in October 2026:
 For this repository, the remaining verification item is therefore track-specific: confirm the Suno account tier and permitted-download status that applied to each music track when it was created/downloaded.
 
 
-### Cybertruck model source
+### TurboSquid Cybertruck asset source
 
-The Cybertruck model source provided by the project owner is:
+The source provided for `fbx/cybertruck.glb` is:
 
 https://www.turbosquid.com/FullPreview/1705879
 
@@ -84,4 +84,8 @@ TurboSquid identifies the creator/uploader as **Bryancr** (product ID 1705879).
 
 The listing is marked **Editorial Uses Only**. TurboSquid's current licensing guidance states that Editorial Use models are intended for editorial/news/academic contexts and are not cleared for ordinary video-game use without separate rights from the depicted IP holder. TurboSquid also prohibits redistribution of the source 3D model file itself outside a permitted Creation.
 
-For that reason, this asset must not be treated as covered by any source-code license in this repository. Before a true open-source release, either obtain the necessary permissions or replace/remove this model with an asset whose redistribution and game-use rights are explicit.
+For that reason, this asset must not be treated as covered by any source-code license in this repository. It is also important that the current runtime does **not** reference `fbx/cybertruck.glb`.
+
+The player vehicle actually loaded by `index.html` is `fbx/moto.fbx`. Git history shows that file was renamed from `Cybertruck.fbx`, but the repository does not document its original external source or license. Its provenance therefore remains a separate unresolved item.
+
+Before a true open-source release, either verify the rights for each shipped model independently or remove/replace any model whose redistribution and game-use rights cannot be confirmed.
