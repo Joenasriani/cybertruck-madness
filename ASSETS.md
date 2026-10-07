@@ -53,3 +53,15 @@ If rights cannot be verified, replace the asset with one whose provenance and li
 ## Naming and trademarks
 
 Cybertruck, Tesla, and Motocross Madness are referenced descriptively in this experimental fan project. The project should not imply affiliation, sponsorship, or endorsement by the relevant trademark owners.
+
+
+## Suno terms verification
+
+Checked against Suno's current Terms of Service and Help Center in October 2026:
+
+- Outputs created while subscribed to Suno Pro or Premier can carry ownership/commercial-use rights, subject to Suno's Terms and permitted-download requirements.
+- Outputs created on the Basic/free tier are limited to personal, non-commercial use unless Suno separately grants qualifying rights.
+- A later paid subscription does not automatically make earlier free-tier generations commercially licensed.
+- Copyright protection is separate from contractual ownership/commercial-use rights and can vary by jurisdiction.
+
+For this repository, the remaining verification item is therefore track-specific: confirm the Suno account tier and permitted-download status that applied to each music track when it was created/downloaded.
