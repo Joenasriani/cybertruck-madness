@@ -15,8 +15,8 @@ It is intentionally conservative: when provenance, ownership, or redistribution 
 
 | File | Current role | Provenance | Redistribution rights |
 |---|---|---|---|
-| `music/Cybertruck - The Electric Juggernaut.mp3` | Background music | Created by Joe Nasr using Suno under the artist name **ShallowWaters** (creator-provided provenance) | Suno-plan / terms verification still required |
-| `music/cybertrucklowres.mp3` | Background music | Created by Joe Nasr using Suno under the artist name **ShallowWaters** (creator-provided provenance) | Suno-plan / terms verification still required |
+| `music/Cybertruck - The Electric Juggernaut.mp3` | Background music | Created with Suno under the artist name **ShallowWaters** (creator-provided provenance) | Suno-plan / terms verification still required |
+| `music/cybertrucklowres.mp3` | Background music | Created with Suno under the artist name **ShallowWaters** (creator-provided provenance) | Suno-plan / terms verification still required |
 | `music/Cybertrucking.mp3` | 2-byte placeholder / unusable asset | Placeholder file; provenance not relevant to runtime use | Not used in current playlist |
 | `music/cybertruck.mp3` | 2-byte placeholder / unusable asset | Placeholder file; provenance not relevant to runtime use | Not used in current playlist |
 
@@ -24,7 +24,7 @@ The current contributor-readiness branch removes the two 2-byte placeholder file
 
 ### Music creator credit
 
-The music used by the project was created by **Joe Nasr** with Suno and released/credited under the artist name **ShallowWaters**. This establishes creator provenance for the project documentation, but does not by itself establish redistribution or commercial-use rights under Suno's terms.
+The music used by the project was created with Suno and released/credited under the artist name **ShallowWaters**. This establishes creator provenance for the project documentation, but does not by itself establish redistribution or commercial-use rights under Suno's terms.
 
 ## Runtime dependency
 
