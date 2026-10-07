@@ -1,8 +1,8 @@
 # Roadmap
 
-This roadmap is intentionally practical. It focuses on changes that make the game more fun, more extensible, and easier for contributors to work on.
+Roadmap for gameplay, controls, performance, structure, and community work.
 
-## P0 — Community readiness
+## P0: Community readiness
 
 - [x] Replace the minimal README with real project documentation
 - [x] Add contribution guidance
@@ -15,7 +15,7 @@ This roadmap is intentionally practical. It focuses on changes that make the gam
 - [ ] Enable GitHub Discussions
 - [ ] Establish first tagged community baseline release
 
-## P1 — Core gameplay
+## P1: Core gameplay
 
 - [ ] Improve vehicle handling and drift tuning
 - [ ] Add ramps / jumps
@@ -26,7 +26,7 @@ This roadmap is intentionally practical. It focuses on changes that make the gam
 - [ ] Improve collision behavior
 - [ ] Add better recovery / reset behavior
 
-## P2 — World
+## P2: World
 
 - [ ] Improve procedural terrain
 - [ ] Add biome variation
@@ -34,7 +34,7 @@ This roadmap is intentionally practical. It focuses on changes that make the gam
 - [ ] Add more meaningful obstacles
 - [ ] Improve exploration incentives
 
-## P3 — Controls and accessibility
+## P3: Controls and accessibility
 
 - [ ] Add gamepad support
 - [ ] Improve mobile steering feel
@@ -42,7 +42,7 @@ This roadmap is intentionally practical. It focuses on changes that make the gam
 - [ ] Add remappable controls
 - [ ] Add reduced-motion / effects options where practical
 
-## P4 — Performance and architecture
+## P4: Performance and architecture
 
 - [ ] Profile CPU / GPU bottlenecks
 - [ ] Reduce unnecessary allocations in the animation loop
@@ -67,7 +67,7 @@ assets/
   audio/
 ```
 
-## P5 — Community-driven expansion
+## P5: Community-driven expansion
 
 Potential areas once the baseline is stable:
 
