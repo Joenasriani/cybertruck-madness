@@ -8,23 +8,29 @@ An experimental open-world browser driving game built with Three.js and inspired
 
 ## What it is
 
-Cybertruck Madness '98 drops you into a large procedural terrain where you drive, drift, collect rings, manage battery charge, navigate with a compass/map, and unlock an extraction objective.
+Cybertruck Madness '98 drops you into a 10,000 × 10,000 procedural terrain where you drive, drift, collect rings, manage battery charge, navigate with a compass/map, and unlock an extraction objective.
 
 The current build includes:
 
 - Three.js rendering
-- Large procedural terrain
+- 10,000 × 10,000 procedural terrain
 - Arcade driving and drift physics
-- Cybertruck 3D vehicle
+- Runtime 3D vehicle loaded from `fbx/moto.fbx`
 - 500 collectible rings
-- Battery / recharge mechanic
-- Compass navigation
-- Expandable map
+- Exit unlock at 450 rings (90%)
+- +20 battery charge per collected ring
+- Compass navigation to the nearest ring, then to the exit
+- Expandable map showing remaining rings, player position, and unlocked exit
+- About 15,000 procedurally placed trees
+- 200 rocks plus tree/rock collision obstacles
 - Keyboard controls
 - Touch controls for mobile
-- Camera switching
-- Engine, skid, collection, and landing audio
-- Extraction / mission-complete objective
+- Mobile vibration / haptic feedback
+- Two camera modes: chase and top-down
+- Procedural engine, skid, collection, and landing SFX
+- ShallowWaters background music
+- Hidden green extraction beacon that appears after the ring target is reached
+- Mission-complete / replay flow
 
 ## Controls
 
@@ -42,6 +48,7 @@ The current build includes:
 - Left touch zone — move and steer
 - Right touch zone — hold to brake / drift
 - HUD buttons control map, camera, music, and SFX
+- Supported devices also use vibration/haptic feedback for collection, drifting, braking interactions, and collisions
 
 ## Current architecture
 
@@ -58,6 +65,8 @@ The project is intentionally simple right now:
 ```
 
 Most gameplay logic currently lives in `index.html`. That makes the project easy to inspect, but it also creates a clear contribution opportunity: progressively modularize systems without changing the playable behavior.
+
+The current runtime loads `fbx/moto.fbx` as the player vehicle. Git history shows that file was previously named `Cybertruck.fbx`. The separate `fbx/cybertruck.glb` file is present in the repository but is not referenced by the current game code.
 
 ## Run locally
 
