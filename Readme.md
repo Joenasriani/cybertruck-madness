@@ -10,7 +10,7 @@ An experimental open-world browser driving game built with Three.js and inspired
 
 Cybertruck Madness '98 drops you into a 10,000 × 10,000 procedural terrain where you drive, drift, collect rings, manage battery charge, navigate with a compass/map, and unlock an extraction objective.
 
-The current build includes:
+What is in the current build:
 
 - Three.js rendering
 - 10,000 × 10,000 procedural terrain
@@ -36,23 +36,23 @@ The current build includes:
 
 ### Desktop
 
-- `W` / `Arrow Up` — accelerate
-- `S` / `Arrow Down` — reverse
-- `A` / `Arrow Left` — steer left
-- `D` / `Arrow Right` — steer right
-- `Space` — brake / drift
+- `W` / `Arrow Up`: accelerate
+- `S` / `Arrow Down`: reverse
+- `A` / `Arrow Left`: steer left
+- `D` / `Arrow Right`: steer right
+- `Space`: brake / drift
 - Use the HUD buttons for map, camera, music, and SFX controls
 
 ### Mobile
 
-- Left touch zone — move and steer
-- Right touch zone — hold to brake / drift
+- Left touch zone: move and steer
+- Right touch zone: hold to brake / drift
 - HUD buttons control map, camera, music, and SFX
 - Supported devices also use vibration/haptic feedback for collection, drifting, braking interactions, and collisions
 
 ## Current architecture
 
-The project is intentionally simple right now:
+Current structure:
 
 ```text
 .
@@ -86,9 +86,9 @@ http://localhost:8000
 
 No build step is currently required.
 
-## Help take it further
+## Where to contribute
 
-Good areas for contribution include:
+Useful contribution areas:
 
 - Better vehicle physics and drift behavior
 - Ramps, jumps, stunt scoring, and tricks
@@ -110,15 +110,15 @@ See [ROADMAP.md](ROADMAP.md) and [CONTRIBUTING.md](CONTRIBUTING.md).
 
 ## Contribution philosophy
 
-This project should stay playable, experimental, and a little strange.
+Keep the game playable, experimental, and recognizable.
 
-The goal is not to turn it into a generic framework. Contributions should make the game more fun, more technically interesting, easier to extend, or easier to run.
+Do not turn it into a generic framework. Changes should improve the game, the code, performance, controls, or extensibility.
 
-Small focused pull requests are preferred over huge rewrites.
+Prefer focused pull requests over large rewrites.
 
 ## Project status
 
-Current status: **experimental / actively developed**
+Status: **experimental / actively developed**
 
 The live game works. The source code is MIT-licensed, and contributions are welcome.
 
