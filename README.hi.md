@@ -30,17 +30,17 @@ Cybertruck Madness '98 आपको एक बड़े procedural terrain म�
 
 ### Desktop
 
-- `W` / `Arrow Up` — accelerate
-- `S` / `Arrow Down` — reverse
-- `A` / `Arrow Left` — steer left
-- `D` / `Arrow Right` — steer right
-- `Space` — brake / drift
+- `W` / `Arrow Up`: accelerate
+- `S` / `Arrow Down`: reverse
+- `A` / `Arrow Left`: steer left
+- `D` / `Arrow Right`: steer right
+- `Space`: brake / drift
 - Map, camera, music और SFX के लिए HUD buttons इस्तेमाल करें
 
 ### Mobile
 
-- Left touch zone — move और steer
-- Right touch zone — brake / drift के लिए hold करें
+- Left touch zone: move और steer
+- Right touch zone: brake / drift के लिए hold करें
 - HUD buttons map, camera, music और SFX नियंत्रित करते हैं
 
 ## मौजूदा architecture
