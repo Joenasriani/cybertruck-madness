@@ -111,13 +111,13 @@ Contribution के अच्छे क्षेत्र:
 
 मौजूदा स्थिति: **experimental / community-readiness phase**
 
-Live game काम करता है, लेकिन repository structure, licensing, contributor workflow और asset-rights documentation अभी भी सुधारे जा रहे हैं।
+Live game काम करता है। Source code MIT License के तहत है; contributor workflow और asset-rights documentation अभी भी सुधारे जा रहे हैं।
 
 ## Licensing और third-party assets
 
-अभी कोई software license चुना नहीं गया है।
+Source code [MIT License](LICENSE) के तहत licensed है।
 
-जब तक license जोड़ा नहीं जाता और third-party asset rights document नहीं किए जाते, यह न मानें कि इस public repository तक पहुँच आपको code, vehicle models, music, names या अन्य assets को बिना सीमा reuse, redistribute या commercially exploit करने का अधिकार देती है।
+यह license software source code पर लागू होता है। यह bundled 3D models, music, names, trademarks या अलग source वाले अन्य assets पर अपने-आप अधिकार नहीं देता। मौजूदा provenance और rights status के लिए [ASSETS.md](ASSETS.md) देखें।
 
 ## Disclaimer
 
