@@ -30,17 +30,17 @@ Build saat ini mencakup:
 
 ### Desktop
 
-- `W` / `Arrow Up` — akselerasi
-- `S` / `Arrow Down` — mundur
-- `A` / `Arrow Left` — belok kiri
-- `D` / `Arrow Right` — belok kanan
-- `Space` — rem / drift
+- `W` / `Arrow Up`: akselerasi
+- `S` / `Arrow Down`: mundur
+- `A` / `Arrow Left`: belok kiri
+- `D` / `Arrow Right`: belok kanan
+- `Space`: rem / drift
 - Gunakan tombol HUD untuk peta, kamera, musik, dan SFX
 
 ### Mobile
 
-- Zona sentuh kiri — bergerak dan mengemudi
-- Zona sentuh kanan — tahan untuk rem / drift
+- Zona sentuh kiri: bergerak dan mengemudi
+- Zona sentuh kanan: tahan untuk rem / drift
 - Tombol HUD mengontrol peta, kamera, musik, dan SFX
 
 ## Arsitektur saat ini
