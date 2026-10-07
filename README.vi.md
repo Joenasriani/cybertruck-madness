@@ -30,17 +30,17 @@ Bản hiện tại bao gồm:
 
 ### Máy tính
 
-- `W` / `Arrow Up` — tăng tốc
-- `S` / `Arrow Down` — lùi
-- `A` / `Arrow Left` — rẽ trái
-- `D` / `Arrow Right` — rẽ phải
-- `Space` — phanh / drift
+- `W` / `Arrow Up`: tăng tốc
+- `S` / `Arrow Down`: lùi
+- `A` / `Arrow Left`: rẽ trái
+- `D` / `Arrow Right`: rẽ phải
+- `Space`: phanh / drift
 - Dùng các nút HUD để điều khiển bản đồ, camera, nhạc và SFX
 
 ### Di động
 
-- Vùng cảm ứng bên trái — di chuyển và đánh lái
-- Vùng cảm ứng bên phải — giữ để phanh / drift
+- Vùng cảm ứng bên trái: di chuyển và đánh lái
+- Vùng cảm ứng bên phải: giữ để phanh / drift
 - Các nút HUD điều khiển bản đồ, camera, nhạc và SFX
 
 ## Kiến trúc hiện tại
