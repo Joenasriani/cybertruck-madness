@@ -95,7 +95,7 @@ Include the source and license information in the pull request.
 
 ## Licensing note
 
-The repository does not yet have a finalized software license. Do not assume public visibility equals unrestricted reuse rights.
+The repository source code is licensed under the MIT License. Bundled 3D/audio assets are tracked separately in `ASSETS.md` and may have different or unresolved rights.
 
 ## Style
 
