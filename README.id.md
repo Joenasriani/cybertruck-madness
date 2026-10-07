@@ -111,13 +111,13 @@ Pull Request kecil dan terfokus lebih disukai daripada penulisan ulang besar.
 
 Status saat ini: **eksperimental / fase kesiapan komunitas**
 
-Game live sudah berjalan, tetapi struktur repositori, lisensi, alur kontribusi, dan dokumentasi hak aset masih terus diperbaiki.
+Game live sudah berjalan. Kode sumber dilisensikan dengan MIT; alur kontribusi dan dokumentasi hak aset masih terus diperbaiki.
 
 ## Lisensi dan aset pihak ketiga
 
-Belum ada lisensi perangkat lunak yang dipilih.
+Kode sumber dilisensikan di bawah [MIT License](LICENSE).
 
-Sampai lisensi ditambahkan dan hak atas aset pihak ketiga didokumentasikan, jangan menganggap akses publik ke repositori ini otomatis memberikan hak tanpa batas untuk menggunakan kembali, mendistribusikan ulang, atau mengeksploitasi secara komersial kode, model kendaraan, musik, nama, atau aset lain yang disertakan.
+Lisensi ini berlaku untuk kode sumber perangkat lunak. Lisensi ini tidak otomatis memberikan hak atas model 3D, musik, nama, merek dagang, atau aset lain yang berasal dari sumber terpisah. Lihat [ASSETS.md](ASSETS.md) untuk status asal dan hak saat ini.
 
 ## Penafian
 
