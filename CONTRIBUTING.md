@@ -2,7 +2,7 @@
 
 Thanks for wanting to push Cybertruck Madness '98 further.
 
-Contributions are welcome. The repository is intentionally evolved in small, reviewable steps.
+Keep changes small enough to review properly.
 
 ## Before you start
 
