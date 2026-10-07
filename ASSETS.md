@@ -1,5 +1,12 @@
 # Asset provenance
 
+## Code license vs. asset rights
+
+The repository source code is licensed under the MIT License in `LICENSE`.
+
+That software license does **not** by itself grant rights to third-party or separately sourced non-code assets. The 3D models and music listed below remain governed by their own provenance and usage rights until those rights are verified and documented.
+
+
 This file tracks non-code assets currently shipped with Cybertruck Madness '98.
 
 It is intentionally conservative: when provenance, ownership, or redistribution rights are not documented in the repository, the status is recorded as **unverified** rather than assumed.
