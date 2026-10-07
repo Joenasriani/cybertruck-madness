@@ -2,7 +2,7 @@
 
 An experimental open-world browser driving game built with Three.js and inspired by the chaotic feel of late-'90s PC driving games.
 
-**Play it:** https://teslamadness.vercel.app
+**Play it:** https://cybertruckmadness.vercel.app
 
 > This repository is public and actively being prepared for broader community contribution. Licensing and third-party asset rights are still being clarified before the project is described as fully open source.
 
