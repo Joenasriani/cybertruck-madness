@@ -30,17 +30,17 @@ Cybertruck Madness '98 會把你放進一大片程序化地形中。你可以駕
 
 ### 桌面
 
-- `W` / `Arrow Up` — 加速
-- `S` / `Arrow Down` — 倒車
-- `A` / `Arrow Left` — 左轉
-- `D` / `Arrow Right` — 右轉
-- `Space` — 煞車 / 甩尾
+- `W` / `Arrow Up`: 加速
+- `S` / `Arrow Down`: 倒車
+- `A` / `Arrow Left`: 左轉
+- `D` / `Arrow Right`: 右轉
+- `Space`: 煞車 / 甩尾
 - 使用 HUD 按鈕控制地圖、鏡頭、音樂與 SFX
 
 ### 行動裝置
 
-- 左側觸控區 — 移動與轉向
-- 右側觸控區 — 按住進行煞車 / 甩尾
+- 左側觸控區: 移動與轉向
+- 右側觸控區: 按住進行煞車 / 甩尾
 - HUD 按鈕控制地圖、鏡頭、音樂與 SFX
 
 ## 目前架構
