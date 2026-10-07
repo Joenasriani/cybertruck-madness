@@ -1,6 +1,6 @@
 # Changelog
 
-## Unreleased — Community Baseline
+## Unreleased: Community Baseline
 
 This baseline prepares Cybertruck Madness '98 for broader community contribution.
 
