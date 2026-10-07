@@ -109,7 +109,7 @@ Contribution के अच्छे क्षेत्र:
 
 ## Project status
 
-मौजूदा स्थिति: **experimental / community-readiness phase**
+मौजूदा स्थिति: **experimental / actively developed**
 
 Live game काम करता है। Source code MIT License के तहत है; contributor workflow और asset-rights documentation अभी भी सुधारे जा रहे हैं।
 
