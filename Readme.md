@@ -4,7 +4,7 @@ An experimental open-world browser driving game built with Three.js and inspired
 
 **Play it:** https://cybertruckmadness.vercel.app
 
-> This repository is public and actively being prepared for broader community contribution. Licensing and third-party asset rights are still being clarified before the project is described as fully open source.
+> This repository is public and actively being prepared for broader community contribution. The source code is licensed under MIT; rights for bundled 3D/audio assets are documented separately in `ASSETS.md` and are still being verified.
 
 ## What it is
 
@@ -111,13 +111,13 @@ Small focused pull requests are preferred over huge rewrites.
 
 Current status: **experimental / community-readiness phase**
 
-The live game works, but repository structure, licensing, contributor workflow, and asset-rights documentation are still being improved.
+The live game works. The source code is MIT-licensed; contributor workflow and asset-rights documentation are still being improved.
 
 ## Licensing and third-party assets
 
-No software license has been selected yet.
+The source code is licensed under the [MIT License](LICENSE).
 
-Until a license is added and third-party asset rights are documented, do not assume that public access to this repository grants unrestricted rights to reuse, redistribute, or commercially exploit the code, vehicle models, music, names, or other included assets.
+That license applies to the software source code. It does not automatically grant rights to the bundled 3D models, music, names, trademarks, or other separately sourced assets. See [ASSETS.md](ASSETS.md) for the current provenance and rights status.
 
 ## Disclaimer
 
