@@ -2,7 +2,7 @@
 
 Thanks for wanting to push Cybertruck Madness '98 further.
 
-The project is currently in a community-readiness phase. Contributions are welcome, but the repository is intentionally being evolved in small, reviewable steps.
+Contributions are welcome. The repository is intentionally evolved in small, reviewable steps.
 
 ## Before you start
 
