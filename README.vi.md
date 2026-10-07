@@ -111,13 +111,13 @@ Mục tiêu không phải biến nó thành một framework chung. Đóng góp n
 
 Trạng thái hiện tại: **thử nghiệm / giai đoạn chuẩn bị cộng đồng**
 
-Game trực tuyến hoạt động, nhưng cấu trúc kho mã, giấy phép, quy trình đóng góp và tài liệu quyền đối với tài sản vẫn đang được cải thiện.
+Game trực tuyến hoạt động. Mã nguồn được cấp phép theo MIT; quy trình đóng góp và tài liệu quyền đối với tài sản vẫn đang được cải thiện.
 
 ## Giấy phép và tài sản bên thứ ba
 
-Chưa chọn giấy phép phần mềm.
+Mã nguồn được cấp phép theo [MIT License](LICENSE).
 
-Cho đến khi giấy phép được thêm và quyền đối với tài sản bên thứ ba được ghi rõ, đừng giả định rằng việc truy cập công khai kho mã này tự động cho phép tái sử dụng, phân phối lại hoặc khai thác thương mại không giới hạn đối với mã nguồn, mô hình xe, âm nhạc, tên gọi hoặc các tài sản khác.
+Giấy phép này áp dụng cho mã nguồn phần mềm. Nó không tự động cấp quyền đối với các mô hình 3D, âm nhạc, tên gọi, nhãn hiệu hoặc các tài sản có nguồn riêng. Xem [ASSETS.md](ASSETS.md) để biết trạng thái nguồn gốc và quyền hiện tại.
 
 ## Tuyên bố miễn trừ
 
