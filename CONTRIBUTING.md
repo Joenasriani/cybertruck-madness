@@ -6,7 +6,7 @@ The project is currently in a community-readiness phase. Contributions are welco
 
 ## Before you start
 
-1. Play the current build: https://teslamadness.vercel.app
+1. Play the current build: https://cybertruckmadness.vercel.app
 2. Read [ROADMAP.md](ROADMAP.md).
 3. Check existing issues before starting large work.
 4. For major gameplay, architecture, or asset changes, open an issue first.
