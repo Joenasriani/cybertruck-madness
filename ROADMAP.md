@@ -8,7 +8,7 @@ This roadmap is intentionally practical. It focuses on changes that make the gam
 - [x] Add contribution guidance
 - [x] Add issue and pull request templates
 - [x] Document current architecture
-- [ ] Resolve software license
+- [x] License source code under MIT
 - [ ] Document rights / provenance for vehicle models and music
 - [ ] Verify all shipped assets and references
 - [ ] Add repository topics
