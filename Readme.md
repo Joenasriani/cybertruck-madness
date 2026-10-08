@@ -8,6 +8,14 @@ An experimental open-world browser driving game built with Three.js and inspired
 
 > The source code is licensed under MIT. Bundled 3D/audio assets are documented separately in `ASSETS.md` because they may have different rights and provenance.
 
+## Start here
+
+- Play: https://cybertruckmadness.vercel.app
+- Inspect the game: [index.html](index.html)
+- Pick a contributor task: [open issues](https://github.com/Joenasriani/cybertruck-madness/issues)
+- Propose a design without code: [design proposal](https://github.com/Joenasriani/cybertruck-madness/issues/new?template=design_proposal.md)
+- Read the contribution rules: [CONTRIBUTING.md](CONTRIBUTING.md)
+
 ## What it is
 
 Cybertruck Madness '98 drops you into a 10,000 × 10,000 procedural terrain where you drive, drift, collect rings, manage battery charge, navigate with a compass/map, and unlock an extraction objective.
