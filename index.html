@@ -383,7 +383,7 @@
         
         <!-- BUTTONS -->
         <div id="map-toggle-btn" class="hud-btn">MAP</div>
-        <div id="camera-indicator" class="hud-btn">CAM: FAR CHASE</div>
+        <div id="camera-indicator" class="hud-btn">CAM: CHASE</div>
         <div id="music-indicator" class="hud-btn">MUSIC: ON</div>
         <div id="sfx-indicator" class="hud-btn">SFX: ON</div>
         
@@ -940,16 +940,6 @@
             } 
         }
         
-        function setupTouchControls() {
-            joystick.init();
-            const bindBtn = (id, key) => {
-                const btn = document.getElementById(id);
-                const start = (e) => { e.preventDefault(); keys[key] = true; btn.classList.add('active'); sfx.init(); sfx.playMusic(); if(window.navigator.vibrate) window.navigator.vibrate(10); };
-                const end = (e) => { e.preventDefault(); keys[key] = false; btn.classList.remove('active'); };
-                btn.addEventListener('touchstart', start, { passive: false }); btn.addEventListener('touchend', end, { passive: false });
-            };
-        }
-
         function createTerrain() {
             // 500x500 segments = 250,000 vertices
             const geometry = new THREE.PlaneGeometry(10000, 10000, 500, 500); 
@@ -1052,10 +1042,9 @@
         function switchCamera() { 
             activeCameraMode = (activeCameraMode + 1) % 2; 
             const ind = document.getElementById('camera-indicator'); 
-            let nextMode = (activeCameraMode + 1) % 2;
             let label = "";
-            switch(nextMode) {
-                case 0: label = "CAM: ANGLED VIEW"; break;
+            switch(activeCameraMode) {
+                case 0: label = "CAM: CHASE"; break;
                 case 1: label = "CAM: TOP VIEW"; break;
             }
             ind.innerText = label;
