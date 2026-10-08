@@ -1,5 +1,7 @@
 # Cybertruck Madness '98
 
+[English](Readme.md)
+
 Một game lái xe thế giới mở thử nghiệm trên trình duyệt, được xây dựng bằng Three.js và lấy cảm hứng từ cảm giác hỗn loạn, tự do của các game lái xe PC cuối thập niên 1990.
 
 **Chơi ngay:** https://cybertruckmadness.vercel.app
