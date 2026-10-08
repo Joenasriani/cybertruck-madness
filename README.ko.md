@@ -1,5 +1,7 @@
 # Cybertruck Madness '98
 
+[English](Readme.md)
+
 Three.js로 만든 실험적인 오픈월드 브라우저 드라이빙 게임입니다. 1990년대 후반 PC 드라이빙 게임 특유의 혼란스럽고 자유로운 감성에서 영감을 받았습니다.
 
 **플레이:** https://cybertruckmadness.vercel.app
