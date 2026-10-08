@@ -132,6 +132,32 @@ http://localhost:8000
 
 No build step is currently required.
 
+## Open contribution scope
+
+Cybertruck Madness '98 is the base, not a fixed feature list.
+
+Productive ideas and executions are welcome when they add clear value to the game or the project. That can include:
+
+- new gameplay systems
+- driving and physics experiments
+- multiplayer and room systems
+- visual direction and motion
+- world and environment ideas
+- missions, challenges and scoring
+- procedural systems
+- audio and feedback
+- mobile controls
+- accessibility
+- performance work
+- architecture improvements
+- developer tools
+- documentation
+- prototypes that test a strong new direction
+
+Ideas do not have to fit the current roadmap if they are specific enough to evaluate.
+
+A proposal should explain what changes, why it is useful, and how it can be tested. A working prototype or focused pull request is even better.
+
 ## Where to contribute
 
 Useful contribution areas:
