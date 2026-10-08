@@ -1,5 +1,7 @@
 # Cybertruck Madness '98
 
+[English](Readme.md) | [简体中文](README.zh-CN.md) | [繁體中文](README.zh-TW.md) | [日本語](README.ja.md) | [한국어](README.ko.md) | [Tiếng Việt](README.vi.md) | [ไทย](README.th.md) | [Bahasa Indonesia](README.id.md) | [हिन्दी](README.hi.md) | [العربية](README.ar.md)
+
 An experimental open-world browser driving game built with Three.js and inspired by the chaotic feel of late-'90s PC driving games.
 
 **Play it:** https://cybertruckmadness.vercel.app
@@ -31,6 +33,19 @@ What is in the current build:
 - ShallowWaters background music
 - Hidden green extraction beacon that appears after the ring target is reached
 - Mission-complete / replay flow
+
+## Why inspect the source
+
+The game is small enough to trace without a framework or build pipeline, but it already contains several systems worth studying:
+
+- 10,000 × 10,000 mathematical terrain generation without terrain raycasting
+- about 15,000 trees rendered with `THREE.InstancedMesh`
+- custom arcade vehicle movement and drift behavior
+- touch steering, brake/drift input and mobile haptics
+- canvas-based world map and nearest-target compass
+- procedural Web Audio engine, skid, collection and landing sounds
+- collectible, battery and extraction-state logic
+- no build step required for local inspection
 
 ## Controls
 
@@ -67,6 +82,27 @@ Current structure:
 Most gameplay logic currently lives in `index.html`. That makes the project easy to inspect, but it also creates a clear contribution opportunity: progressively modularize systems without changing the playable behavior.
 
 The current runtime loads `fbx/moto.fbx` as the player vehicle. Git history shows that file was previously named `Cybertruck.fbx`. The separate `fbx/cybertruck.glb` file is present in the repository but is not referenced by the current game code.
+
+## Where the systems live
+
+Most game systems are still in `index.html`, which makes the current implementation easy to follow.
+
+| System | Current implementation |
+|---|---|
+| Touch controls | `controls.init()` |
+| Keyboard input | `onKey()` |
+| Vehicle movement and drift | `animate()` |
+| Terrain height | `calculateTerrainHeight()` |
+| Terrain mesh | `createTerrain()` |
+| Trees | `createHighResTrees()` |
+| Rocks and collision obstacles | `createRocks()`, `checkCollisions()` |
+| Rings | `createRings()`, `checkRings()` |
+| Battery | `updateBattery()` |
+| Map | `drawBigMap()` |
+| Compass | `updateCompass()` |
+| Audio | `sfx` |
+| Vehicle loading | `loadModels()` |
+| Exit beacon | `createExitBeacon()` |
 
 ## Run locally
 
@@ -107,6 +143,24 @@ Useful contribution areas:
 - Progressive modularization of `index.html`
 
 See [ROADMAP.md](ROADMAP.md) and [CONTRIBUTING.md](CONTRIBUTING.md).
+
+### Design contributions without code
+
+You can contribute a driving challenge without writing JavaScript.
+
+A useful proposal can be a sketch, route diagram, annotated screenshot or short design note. Include:
+
+- objective
+- route or area
+- mechanics already used by the challenge
+- difficulty
+- success and failure conditions
+- optional visual reference
+
+Good fits for the current game include checkpoint routes, stunt locations, ring placement, exploration pacing, mission ideas, environmental landmarks and accessibility changes.
+
+For larger ideas, open an issue first so the scope can be checked against the current game systems.
+
 
 ## Contribution philosophy
 
