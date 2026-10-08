@@ -6,6 +6,12 @@ This baseline prepares Cybertruck Madness '98 for broader community contribution
 
 ### Added
 
+- Developer discovery section with direct source/contribution links
+- Technical system map using real function names
+- No-code design proposal path
+- HTML title, meta description, canonical URL and Open Graph metadata
+- `robots.txt` and single-page `sitemap.xml`
+- Language navigation between English and localized READMEs
 - MIT license for source code
 - Full project README
 - Contribution guide
