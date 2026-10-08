@@ -1,5 +1,7 @@
 # Cybertruck Madness '98
 
+[English](Readme.md)
+
 Game mengemudi open-world eksperimental di browser, dibuat dengan Three.js dan terinspirasi oleh nuansa kacau dan bebas dari game mengemudi PC akhir 1990-an.
 
 **Mainkan:** https://cybertruckmadness.vercel.app
