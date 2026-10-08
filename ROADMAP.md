@@ -2,7 +2,7 @@
 
 Roadmap for gameplay, controls, performance, structure, and community work.
 
-## P0: Community readiness
+## P0: Repository baseline
 
 - [x] Replace the minimal README with real project documentation
 - [x] Add contribution guidance
