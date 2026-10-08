@@ -3,7 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
-    <title>Cybertruck Madness 1998 - Physics Update</title>
+    <title>Cybertruck Madness '98 | Three.js Browser Driving Game</title>
+    <meta name="description" content="Open-world Three.js browser driving game with procedural terrain, custom drift physics, mobile controls, collectible objectives and source code on GitHub.">
+    <link rel="canonical" href="https://cybertruckmadness.vercel.app/">
+    <meta property="og:title" content="Cybertruck Madness '98">
+    <meta property="og:description" content="Open-world Three.js browser driving game with procedural terrain, custom drift physics, mobile controls and collectible objectives.">
+    <meta property="og:url" content="https://cybertruckmadness.vercel.app/">
+    <meta property="og:type" content="website">
     
     <script type="importmap">
     {
@@ -377,7 +383,7 @@
         
         <!-- BUTTONS -->
         <div id="map-toggle-btn" class="hud-btn">MAP</div>
-        <div id="camera-indicator" class="hud-btn">CAM: FAR CHASE</div>
+        <div id="camera-indicator" class="hud-btn">CAM: CHASE</div>
         <div id="music-indicator" class="hud-btn">MUSIC: ON</div>
         <div id="sfx-indicator" class="hud-btn">SFX: ON</div>
         
@@ -446,7 +452,7 @@
         const BATTERY_DRAIN = 0.015; 
         const RING_CHARGE = 20;
 
-        // --- NEW MAP & WIN LOGIC ---
+        // Map and win logic
         const TOTAL_RINGS = 500;
         const WIN_PCT = 0.90;
         const REQUIRED_RINGS = Math.floor(TOTAL_RINGS * WIN_PCT);
@@ -583,7 +589,7 @@
                 this.engineOsc.connect(this.filter); this.filter.connect(this.engineGain); this.engineGain.connect(this.ctx.destination);
                 this.engineOsc.start();
 
-                // --- MODIFIED SKID AUDIO CHAIN ---
+                // Skid audio chain
                 this.skidOsc = this.ctx.createOscillator();
                 this.skidOsc.type = 'sawtooth'; 
                 this.skidOsc.frequency.value = 35; 
@@ -602,8 +608,7 @@
                 this.skidOsc.start();
 
                 const playlist = [
-                    "Cybertruking.mp3",
-                    "cybertruck.mp3",
+                    "cybertrucklowres.mp3",
                     "Cybertruck - The Electric Juggernaut.mp3"
                 ];
 
@@ -688,7 +693,7 @@
                 osc.type = 'square';
                 osc.frequency.setValueAtTime(150, this.ctx.currentTime);
                 osc.frequency.exponentialRampToValueAtTime(300, this.ctx.currentTime + 0.1);
-                // MODIFIED: Reduced volume to 0.015 (Very Quiet)
+                // Quiet collection tone
                 gain.gain.setValueAtTime(0.015, this.ctx.currentTime);
                 gain.gain.exponentialRampToValueAtTime(0.01, this.ctx.currentTime + 0.5);
                 osc.connect(gain); gain.connect(this.ctx.destination);
@@ -717,7 +722,7 @@
             loadModels();
 
             window.addEventListener('resize', onWindowResize);
-            // Spacebar map added
+            // Keyboard input
             document.addEventListener('keydown', (e) => { onKey(e, true); sfx.init(); sfx.playMusic(); });
             document.addEventListener('keyup', (e) => onKey(e, false));
             
@@ -764,7 +769,7 @@
              if(text) { text.innerText = "ERROR: " + name + " NOT FOUND. USING FALLBACK."; text.className = "error-msg"; }
         }
 
-        // --- MATH OPTIMIZED HEIGHT FUNCTION (NO RAYCASTER) ---
+        // Deterministic terrain height function
         // Returns the exact Y height of the terrain at x, z
         function calculateTerrainHeight(x, z) {
             // Must match the createTerrain formula exactly
@@ -796,13 +801,13 @@
         }
 
         function createRings() {
-            // MODIFIED: BIGGER RINGS (3.5 radius, 0.5 thick)
+            // Ring geometry
             const geo = new THREE.TorusGeometry(3.5, 0.5, 16, 32);
             const mat = new THREE.MeshStandardMaterial({ 
                 color: 0xFFFF00, metalness: 0.1, roughness: 0.2, emissive: 0xFFFF00, emissiveIntensity: 0.8
             });
 
-            // MODIFIED: Zoning for easier start
+            // Spawn more rings near the center for a gentler start
             // 30% of rings spawn closer to center
             const EASY_ZONE_COUNT = Math.floor(TOTAL_RINGS * 0.3);
             const EASY_RANGE = 2000;
@@ -837,7 +842,7 @@
 
                 y = getTerrainHeight(x, z);
                 const ring = new THREE.Mesh(geo, mat);
-                // MODIFIED: Float higher (+3.5)
+                // Raise rings above terrain
                 ring.position.set(x, y + 3.5, z); 
                 ring.rotation.y = Math.random() * Math.PI;
                 ring.castShadow = true;
@@ -862,7 +867,7 @@
             }, (xhr) => { if (xhr.lengthComputable) { progressMoto = (xhr.loaded / xhr.total) * 100; updateProgress(); } else { progressMoto = 50; updateProgress(); }
             }, (error) => { console.warn("Moto FBX missing."); reportError("moto.fbx"); createFallbackBike(); assetsLoaded++; checkLoading(); });
 
-            // 2. High Res Procedural Trees (MATH OPTIMIZED)
+            // 2. Procedural trees
             createHighResTrees();
 
             createRocks();
@@ -935,18 +940,8 @@
             } 
         }
         
-        function setupTouchControls() {
-            joystick.init();
-            const bindBtn = (id, key) => {
-                const btn = document.getElementById(id);
-                const start = (e) => { e.preventDefault(); keys[key] = true; btn.classList.add('active'); sfx.init(); sfx.playMusic(); if(window.navigator.vibrate) window.navigator.vibrate(10); };
-                const end = (e) => { e.preventDefault(); keys[key] = false; btn.classList.remove('active'); };
-                btn.addEventListener('touchstart', start, { passive: false }); btn.addEventListener('touchend', end, { passive: false });
-            };
-        }
-
         function createTerrain() {
-            // 500x500 segments = 250,000 vertices (Fast to render, slow to raycast)
+            // 500x500 segments = 250,000 vertices
             const geometry = new THREE.PlaneGeometry(10000, 10000, 500, 500); 
             geometry.rotateX(-Math.PI / 2); 
             const positions = geometry.attributes.position.array;
@@ -987,7 +982,7 @@
             }
         }
         
-        // --- MODIFIED: LOWER OPACITY, SAND-LIKE PARTICLES ---
+        // Sand-like drift particles
         function createDriftSmoke(intensity) {
             if(!bikeGroup) return; 
             const offset = new THREE.Vector3(0, 0.2, 0.5); 
@@ -1047,10 +1042,9 @@
         function switchCamera() { 
             activeCameraMode = (activeCameraMode + 1) % 2; 
             const ind = document.getElementById('camera-indicator'); 
-            let nextMode = (activeCameraMode + 1) % 2;
             let label = "";
-            switch(nextMode) {
-                case 0: label = "CAM: ANGLED VIEW"; break;
+            switch(activeCameraMode) {
+                case 0: label = "CAM: CHASE"; break;
                 case 1: label = "CAM: TOP VIEW"; break;
             }
             ind.innerText = label;
@@ -1071,7 +1065,7 @@
                 const dz = playerPos.z - ring.position.z;
                 const dist = Math.sqrt(dx*dx + dy*dy + dz*dz);
 
-                // MODIFIED: INCREASED HITBOX TO 5.0 (easier to hit)
+                // Collection radius
                 if (dist < 5.0) {
                     scene.remove(ring); 
                     rings.splice(i, 1); 
@@ -1205,7 +1199,7 @@
                 
                 // Relative angle = Target - Player
                 // However, player rotation Y is usually counter-clockwise from Z? 
-                // Let's adjust until it looks right.
+                // Convert target direction into vehicle-relative heading.
                 // Compass Arrow Rotation needs to act like a real compass relative to screen (fixed) or car (rotating)?
                 // "Compass style directional indicator" usually means arrow points relative to car's forward.
                 
@@ -1231,7 +1225,7 @@
             
             let turnInput = 0; if (keys.a) turnInput += 1; if (keys.d) turnInput -= 1; turnInput += analogSteering; 
 
-            // --- ADVANCED MOTO DRIFT PHYSICS 5.0 (SMOOTH & DYNAMIC) ---
+            // Drift physics
             
             const turnDelta = turnInput - lastTurnInput;
             lastTurnInput = turnInput;
@@ -1250,9 +1244,9 @@
                 // Instead of adding force constantly, we target a velocity proportional to speed & steer
                 // This makes it "smooth and relative"
                 const driftFactor = 0.8; // How "wide" the drift is
-                const targetLateral = -turnInput * (speed * speed) * driftFactor; // Invert turn for correct slide direction? No, stick to existing signage.
-                // Actually, standard sign: Turn Left (+) -> Slide Right (+ in local X?).
-                // Let's rely on previous sign logic: breakoutForce was += ... * turnInput.
+                const targetLateral = -turnInput * (speed * speed) * driftFactor;
+                // Lateral velocity follows steering input and current speed.
+                
                 
                 // We Lerp towards the target drift velocity for smoothness
                 // But we add a kick from turnDelta (steering speed)
