@@ -11,6 +11,9 @@ Roadmap for gameplay, controls, performance, structure, and community work.
 - [x] License source code under MIT
 - [ ] Document rights / provenance for vehicle models and music
 - [ ] Verify all shipped assets and references
+- [x] Add web discovery metadata (title, description, canonical, Open Graph)
+- [x] Add robots.txt and sitemap.xml
+- [x] Add no-code design proposal path
 - [ ] Add repository topics
 - [ ] Enable GitHub Discussions
 - [ ] Establish first tagged community baseline release
