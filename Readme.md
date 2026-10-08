@@ -14,6 +14,8 @@ An experimental open-world browser driving game built with Three.js and inspired
 - Inspect the game: [index.html](index.html)
 - Pick a contributor task: [open issues](https://github.com/Joenasriani/cybertruck-madness/issues)
 - Propose a design without code: [design proposal](https://github.com/Joenasriani/cybertruck-madness/issues/new?template=design_proposal.md)
+- Read the architecture: [ARCHITECTURE.md](ARCHITECTURE.md)
+- Design a challenge without code: [DESIGNING_CHALLENGES.md](DESIGNING_CHALLENGES.md)
 - Read the contribution rules: [CONTRIBUTING.md](CONTRIBUTING.md)
 
 ## What it is
@@ -150,7 +152,7 @@ Useful contribution areas:
 - Map and navigation improvements
 - Progressive modularization of `index.html`
 
-See [ROADMAP.md](ROADMAP.md) and [CONTRIBUTING.md](CONTRIBUTING.md).
+See [ARCHITECTURE.md](ARCHITECTURE.md), [DESIGNING_CHALLENGES.md](DESIGNING_CHALLENGES.md), [ROADMAP.md](ROADMAP.md) and [CONTRIBUTING.md](CONTRIBUTING.md).
 
 ### Design contributions without code
 
