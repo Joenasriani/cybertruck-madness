@@ -6,6 +6,8 @@ This baseline prepares Cybertruck Madness '98 for broader community contribution
 
 ### Added
 
+- `ARCHITECTURE.md` with actual runtime systems and function map
+- `DESIGNING_CHALLENGES.md` for non-code gameplay proposals
 - Developer discovery section with direct source/contribution links
 - Technical system map using real function names
 - No-code design proposal path
