@@ -4,6 +4,32 @@ Thanks for wanting to push Cybertruck Madness '98 further.
 
 Keep changes small enough to review properly.
 
+## What can be proposed
+
+The roadmap is a guide, not a restriction.
+
+You can propose work outside it if the idea is productive and concrete.
+
+A productive contribution should do at least one of these:
+
+- improve how the game feels or plays
+- add a useful mechanic or system
+- test a new direction with a prototype
+- improve performance or reliability
+- improve mobile or accessibility
+- improve visuals, sound or feedback
+- make the code easier to understand or extend
+- add useful documentation or tooling
+
+For a new direction, open an issue first and explain:
+
+1. what you want to change
+2. why it belongs in the project
+3. what the smallest useful version is
+4. how it can be tested
+
+Large ideas can start with a proof of concept. They do not need to arrive as a finished system.
+
 ## Before you start
 
 1. Play the current build: https://cybertruckmadness.vercel.app
