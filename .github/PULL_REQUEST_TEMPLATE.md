@@ -21,3 +21,6 @@ Add these when the change affects gameplay, visuals, UI, or controls.
 - [ ] I checked for obvious console errors
 - [ ] I did not add third-party assets without documenting their source and usage rights
 - [ ] I updated documentation when behavior or setup changed
+- [ ] If adding a model or media asset, I provided authorship/source, license, public redistribution and commercial-use permission evidence
+- [ ] If adding a model or media asset, I identified unresolved third-party rights and my preferred credit name (or requested anonymity)
+- [ ] If integrating an accepted model, I updated ASSETS.md, the README credits, and the in-game Credits UI
