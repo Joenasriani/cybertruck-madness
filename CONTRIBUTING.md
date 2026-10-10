@@ -77,6 +77,19 @@ This is a known limitation and a contribution opportunity. Refactoring should be
 - Code modularization
 - Documentation
 
+## Community Cybertruck models and credits
+
+We need an original, appropriately licensed **Cybertruck** vehicle. The Cybertruck stays in the game. See [3D artists wanted: issue #15](https://github.com/Joenasriani/cybertruck-madness/issues/15).
+
+- The first milestone is **one rights-cleared model**. Additional designs and a vehicle selector are optional, separate tasks.
+- Submit game-ready **FBX** or **GLB/glTF**, plus editable model source files when available. Include images and performance notes for desktop and mobile.
+- Verify authorship or permission to contribute. Record creator, source, exact license, redistribution and modification permissions, commercial-use permissions, and required attribution. Prefer **CC0 or CC BY 4.0** for original 3D model contributions.
+- Do not reuse assets with unknown rights. An asset license alone does not resolve third-party trademark or industrial-design restrictions.
+- State your preferred credit name or GitHub username, or request anonymous attribution.
+- **Accepted** artists and developers will be credited **in the game** and **in the README**. Each approved vehicle receives its own creator credit.
+- Preserve driving, controls, camera, terrain, collisions, sound and mission behavior. Test the changes and describe results.
+- The software remains **MIT-licensed**. Media assets have individually documented licenses in [ASSETS.md](ASSETS.md). Do not assume MIT covers bundled media.
+
 ## Pull request rules
 
 Keep pull requests focused.

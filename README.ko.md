@@ -1,12 +1,12 @@
 # Cybertruck Madness '98
 
-[English](Readme.md)
+[English](Readme.md) | [简体中文](README.zh-CN.md) | [繁體中文](README.zh-TW.md) | [粵語](README.yue-Hant-HK.md) | [日本語](README.ja.md) | [한국어](README.ko.md) | [Tiếng Việt](README.vi.md) | [ไทย](README.th.md) | [Bahasa Indonesia](README.id.md) | [हिन्दी](README.hi.md) | [العربية](README.ar.md)
 
 Three.js로 만든 실험적인 오픈월드 브라우저 드라이빙 게임입니다. 1990년대 후반 PC 드라이빙 게임 특유의 혼란스럽고 자유로운 감성에서 영감을 받았습니다.
 
 **플레이:** https://cybertruckmadness.vercel.app
 
-> 이 저장소는 공개되어 있으며 더 넓은 커뮤니티의 기여를 받을 수 있도록 준비 중입니다. 프로젝트를 완전한 오픈소스로 설명하기 전에 소프트웨어 라이선스와 제3자 에셋 권리를 확인하고 있습니다.
+> 게임 소스 코드는 MIT 라이선스로 공개되며 계속 오픈소스로 유지됩니다. 3D 모델과 오디오의 라이선스는 별도이고 일부 기존 에셋의 권리는 확인되지 않았습니다. [ASSETS.md](ASSETS.md)를 참고하세요.
 
 ## 무엇인가요
 
@@ -114,6 +114,16 @@ http://localhost:8000
 현재 상태: **실험적 / 커뮤니티 준비 단계**
 
 라이브 게임은 작동합니다. 소스 코드는 MIT 라이선스이며, 기여 워크플로와 에셋 권리 문서는 계속 개선 중입니다.
+
+## 커뮤니티 Cybertruck 모델과 기여자 크레딧
+
+**3D 아티스트와 개발자를 모집합니다:** [오리지널 Cybertruck 모델 기여하기](https://github.com/Joenasriani/cybertruck-madness/issues/15).
+
+Cybertruck은 계속 게임의 핵심 차량으로 유지됩니다. 우선 권리가 확인된 게임용 모델 한 개가 필요합니다. 이후 추가 모델과 차량 선택 기능을 제안할 수 있습니다. 현재 승인된 대체 모델은 없습니다.
+
+승인된 모델 제작자와 통합 개발자에게는 게임 내 크레딧과 README에 개별적으로 이름을 표시합니다. 원하는 표시 이름, GitHub 계정 또는 익명 표기를 선택할 수 있습니다.
+
+게임 코드는 MIT 라이선스를 유지합니다. 모델과 미디어에는 별도 라이선스가 적용됩니다. 수정, 공개 재배포, 상업적 이용 권한을 확인해야 합니다. 현재 에셋 권리 상태는 [ASSETS.md](ASSETS.md)에 기록되어 있습니다.
 
 ## 라이선스 및 제3자 에셋
 

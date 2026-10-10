@@ -1,6 +1,6 @@
 # Cybertruck Madness '98
 
-[English](Readme.md) | [简体中文](README.zh-CN.md) | [繁體中文](README.zh-TW.md) | [日本語](README.ja.md) | [한국어](README.ko.md) | [Tiếng Việt](README.vi.md) | [ไทย](README.th.md) | [Bahasa Indonesia](README.id.md) | [हिन्दी](README.hi.md) | [العربية](README.ar.md)
+[English](Readme.md) | [简体中文](README.zh-CN.md) | [繁體中文](README.zh-TW.md) | [粵語](README.yue-Hant-HK.md) | [日本語](README.ja.md) | [한국어](README.ko.md) | [Tiếng Việt](README.vi.md) | [ไทย](README.th.md) | [Bahasa Indonesia](README.id.md) | [हिन्दी](README.hi.md) | [العربية](README.ar.md)
 
 An experimental open-world browser driving game built with Three.js and inspired by the chaotic feel of late-'90s PC driving games.
 
@@ -211,6 +211,16 @@ Prefer focused pull requests over large rewrites.
 Status: **experimental / actively developed**
 
 The live game works. The source code is MIT-licensed, and contributions are welcome.
+
+## Community Cybertruck models and credits
+
+**3D artists and developers wanted:** [Contribute an original Cybertruck model (issue #15)](https://github.com/Joenasriani/cybertruck-madness/issues/15).
+
+The game will **keep a Cybertruck as its playable vehicle**. The goal is a rights-cleared, game-ready community model, with additional original variants and a small vehicle selector welcome later. The current vehicle assets are **not yet redistribution-cleared**; see [ASSETS.md](ASSETS.md). No new model is approved yet.
+
+Accepted model creators and integration contributors will receive individual **in-game credits** and **README recognition**, using their chosen display name or GitHub handle; contributors can also request anonymity. The source code remains MIT-licensed. Model asset licenses are recorded separately and must permit modification and public redistribution, including commercial use.
+
+**Accepted community contributors:** Awaiting first rights-verified model and integration. Credits will be added by name upon acceptance.
 
 ## Licensing and third-party assets
 

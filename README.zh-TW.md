@@ -1,12 +1,12 @@
 # Cybertruck Madness '98
 
-[English](Readme.md)
+[English](Readme.md) | [简体中文](README.zh-CN.md) | [繁體中文](README.zh-TW.md) | [粵語](README.yue-Hant-HK.md) | [日本語](README.ja.md) | [한국어](README.ko.md) | [Tiếng Việt](README.vi.md) | [ไทย](README.th.md) | [Bahasa Indonesia](README.id.md) | [हिन्दी](README.hi.md) | [العربية](README.ar.md)
 
 一款使用 Three.js 製作的實驗性開放世界瀏覽器駕駛遊戲，靈感來自 90 年代末 PC 駕駛遊戲那種混亂又自由的感覺。
 
 **立即遊玩：** https://cybertruckmadness.vercel.app
 
-> 本儲存庫為公開專案，目前正積極準備讓更廣泛的社群參與貢獻。原始碼採 MIT 授權；隨附 3D/音訊資產的權利在 `ASSETS.md` 中分開記錄，目前仍在確認。
+> 遊戲原始碼採 MIT 授權，並將持續維持開源。3D 模型與音訊資產採獨立授權，部分現有資產的使用及再散布權利尚未確認。請參閱 [ASSETS.md](ASSETS.md)。
 
 ## 這是什麼
 
@@ -114,6 +114,16 @@ http://localhost:8000
 目前狀態：**實驗性 / 社群準備階段**
 
 線上遊戲可運作。原始碼採 MIT 授權；貢獻流程與資產權利文件仍在改進。
+
+## 社群 Cybertruck 模型與貢獻者致謝
+
+**徵求 3D 藝術家與開發者：** [貢獻原創 Cybertruck 模型](https://github.com/Joenasriani/cybertruck-madness/issues/15)。
+
+Cybertruck 將繼續作為遊戲的主要可駕駛車輛。首要目標是取得一款權利明確且適合遊戲使用的模型。之後可加入更多車款及車輛選擇功能。目前尚無已核准的替代模型。
+
+被接受的模型創作者和整合開發者都會在遊戲內及 README 中分別獲得署名。可使用慣用姓名、GitHub 帳號或選擇匿名。
+
+遊戲原始碼持續採 MIT 授權。模型及媒體資產使用獨立授權，須允許修改、公開再散布及商業使用。現有資產權利仍待確認，請參閱 [ASSETS.md](ASSETS.md)。
 
 ## 授權與第三方資產
 

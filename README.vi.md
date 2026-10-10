@@ -1,12 +1,12 @@
 # Cybertruck Madness '98
 
-[English](Readme.md)
+[English](Readme.md) | [简体中文](README.zh-CN.md) | [繁體中文](README.zh-TW.md) | [粵語](README.yue-Hant-HK.md) | [日本語](README.ja.md) | [한국어](README.ko.md) | [Tiếng Việt](README.vi.md) | [ไทย](README.th.md) | [Bahasa Indonesia](README.id.md) | [हिन्दी](README.hi.md) | [العربية](README.ar.md)
 
 Một game lái xe thế giới mở thử nghiệm trên trình duyệt, được xây dựng bằng Three.js và lấy cảm hứng từ cảm giác hỗn loạn, tự do của các game lái xe PC cuối thập niên 1990.
 
 **Chơi ngay:** https://cybertruckmadness.vercel.app
 
-> Kho mã này được công khai và đang được chuẩn bị để đón nhận đóng góp rộng rãi hơn từ cộng đồng. Giấy phép phần mềm và quyền đối với tài sản bên thứ ba vẫn đang được xác minh trước khi dự án được mô tả là hoàn toàn mã nguồn mở.
+> Mã nguồn trò chơi được cấp phép MIT và sẽ tiếp tục là mã nguồn mở. Mô hình 3D và âm thanh có giấy phép riêng; quyền của một số tài sản hiện tại chưa được xác minh. Xem [ASSETS.md](ASSETS.md).
 
 ## Đây là gì
 
@@ -114,6 +114,16 @@ Mục tiêu không phải biến nó thành một framework chung. Đóng góp n
 Trạng thái hiện tại: **thử nghiệm / giai đoạn chuẩn bị cộng đồng**
 
 Game trực tuyến hoạt động. Mã nguồn được cấp phép theo MIT; quy trình đóng góp và tài liệu quyền đối với tài sản vẫn đang được cải thiện.
+
+## Mô hình Cybertruck cộng đồng và ghi công tác giả
+
+**Mời nghệ sĩ 3D và lập trình viên:** [Đóng góp mô hình Cybertruck nguyên bản](https://github.com/Joenasriani/cybertruck-madness/issues/15).
+
+Cybertruck sẽ tiếp tục là phương tiện chính của trò chơi. Ưu tiên đầu tiên là một mô hình dùng được với quyền sử dụng rõ ràng. Có thể bổ sung nhiều phiên bản và chức năng chọn xe sau. Hiện chưa có mô hình thay thế nào được phê duyệt.
+
+Tác giả mô hình và lập trình viên tích hợp có đóng góp được chấp nhận sẽ được ghi công riêng trong game và README. Có thể chọn tên hiển thị, tên GitHub hoặc ghi công ẩn danh.
+
+Mã nguồn tiếp tục dùng MIT. Mô hình và tài sản khác có giấy phép riêng. Quyền phải cho phép sửa đổi, phân phối công khai và sử dụng thương mại. Quyền đối với tài sản hiện tại vẫn chưa rõ; xem [ASSETS.md](ASSETS.md).
 
 ## Giấy phép và tài sản bên thứ ba
 

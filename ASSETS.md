@@ -8,7 +8,7 @@ Non-code assets may have different rights. This file records the known source an
 
 | File | Runtime status | Source / provenance | Usage status |
 |---|---|---|---|
-| `fbx/cybertruck.glb` | Present in repository; not referenced by the current runtime code | TurboSquid product 1705879 by **Bryancr** | Listing is marked **Editorial Uses Only**; game/public-repository permission has been requested from TurboSquid |
+| `fbx/cybertruck.glb` | Present in repository; not referenced by the current runtime code | TurboSquid product 1705879 by **Bryancr** | Listed as **Editorial Uses Only**. The owner's request for permission to use/redistribute it did not succeed. **Not cleared** |
 | `fbx/moto.fbx` | **Current runtime player vehicle** | Git history shows it was previously named `Cybertruck.fbx`; original external source/license is not documented | Usage/redistribution rights not yet verified |
 
 ### TurboSquid asset
@@ -19,9 +19,25 @@ https://www.turbosquid.com/FullPreview/1705879
 
 Creator/uploader: **Bryancr**
 
-The listing is marked **Editorial Uses Only**. The file is not referenced by the current game runtime. Permission/clarification has been requested from TurboSquid for game use and public-repository distribution.
+The listing is marked **Editorial Uses Only**. The file is not referenced by the current game runtime. The owner's permission request did not succeed; game/public-repository redistribution remains **uncleared**.
 
 The runtime vehicle is `fbx/moto.fbx`, which is a separate file and should be treated separately for provenance and licensing.
+
+## Community Cybertruck replacement status
+
+**Action:** Invite original, rights-cleared Cybertruck models via [issue #15](https://github.com/Joenasriani/cybertruck-madness/issues/15). Keep the Cybertruck as the playable vehicle. A model selector for extra original variants is optional.
+
+**Current status:** No approved replacement model has been received or integrated. `fbx/moto.fbx` is currently loaded by the game but its rights remain unverified. `fbx/cybertruck.glb` is unused and permission for game/public redistribution was not obtained. **Do not present existing assets as cleared** or merge new models without verification.
+
+When an asset is accepted, replace this placeholder with a record per model:
+
+| Model file | Model name | Creator / credited name | Provenance | Asset license | Permission evidence | Integrated / tested |
+| --- | --- | --- | --- | --- | --- | --- |
+| Awaiting first verified submission | | | | | | |
+
+Preferred licenses for original community-contributed models: **CC0** or **CC BY 4.0**, subject to checking the specific work's ownership, the grant, any required attribution, and remaining design/trademark issues. A source-code MIT license does not automatically apply to models, music, or other assets.
+
+Accepted model authors and developers must also be credited in the game's Credits UI and the README. Preserve the previous provenance entries even after replacing distributed assets. Separately review repository history and outstanding audio rights. Do not treat a later model replacement as retroactively clearing earlier public distributions.
 
 ## Audio
 
