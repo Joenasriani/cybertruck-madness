@@ -1,12 +1,12 @@
 # Cybertruck Madness '98
 
-[English](Readme.md)
+[English](Readme.md) | [简体中文](README.zh-CN.md) | [繁體中文](README.zh-TW.md) | [日本語](README.ja.md) | [한국어](README.ko.md) | [Tiếng Việt](README.vi.md) | [ไทย](README.th.md) | [Bahasa Indonesia](README.id.md) | [हिन्दी](README.hi.md) | [العربية](README.ar.md)
 
 Game mengemudi open-world eksperimental di browser, dibuat dengan Three.js dan terinspirasi oleh nuansa kacau dan bebas dari game mengemudi PC akhir 1990-an.
 
 **Mainkan:** https://cybertruckmadness.vercel.app
 
-> Repositori ini bersifat publik dan sedang dipersiapkan untuk menerima kontribusi komunitas yang lebih luas. Lisensi perangkat lunak dan hak atas aset pihak ketiga masih sedang diklarifikasi sebelum proyek ini disebut sepenuhnya open source.
+> Kode sumber game berlisensi MIT dan akan tetap open source. Lisensi model 3D dan audio terpisah; hak atas beberapa aset saat ini belum terverifikasi. Lihat [ASSETS.md](ASSETS.md).
 
 ## Apa ini
 
@@ -114,6 +114,16 @@ Pull Request kecil dan terfokus lebih disukai daripada penulisan ulang besar.
 Status saat ini: **eksperimental / fase kesiapan komunitas**
 
 Game live sudah berjalan. Kode sumber dilisensikan dengan MIT; alur kontribusi dan dokumentasi hak aset masih terus diperbaiki.
+
+## Model Cybertruck komunitas dan kredit kontributor
+
+**Dicari seniman 3D dan pengembang:** [Kontribusikan model Cybertruck orisinal](https://github.com/Joenasriani/cybertruck-madness/issues/15).
+
+Cybertruck tetap menjadi kendaraan utama game ini. Prioritas pertama adalah satu model siap pakai dengan hak penggunaan yang jelas. Varian tambahan dan pilihan kendaraan dapat menyusul. Belum ada model pengganti yang disetujui.
+
+Setiap seniman model dan pengembang integrasi yang kontribusinya diterima akan mendapat kredit di dalam game dan README. Gunakan nama pilihan, akun GitHub, atau atribusi anonim.
+
+Kode game tetap berlisensi MIT. Model dan aset media menggunakan lisensi terpisah. Lisensi model harus mengizinkan modifikasi, distribusi publik, dan penggunaan komersial. Hak aset yang saat ini digunakan belum sepenuhnya jelas; lihat [ASSETS.md](ASSETS.md).
 
 ## Lisensi dan aset pihak ketiga
 
