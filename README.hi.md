@@ -1,6 +1,6 @@
 # Cybertruck Madness '98
 
-[English](Readme.md) | [简体中文](README.zh-CN.md) | [繁體中文](README.zh-TW.md) | [日本語](README.ja.md) | [한국어](README.ko.md) | [Tiếng Việt](README.vi.md) | [ไทย](README.th.md) | [Bahasa Indonesia](README.id.md) | [हिन्दी](README.hi.md) | [العربية](README.ar.md)
+[English](Readme.md) | [简体中文](README.zh-CN.md) | [繁體中文](README.zh-TW.md) | [粵語](README.yue-Hant-HK.md) | [日本語](README.ja.md) | [한국어](README.ko.md) | [Tiếng Việt](README.vi.md) | [ไทย](README.th.md) | [Bahasa Indonesia](README.id.md) | [हिन्दी](README.hi.md) | [العربية](README.ar.md)
 
 Three.js से बनाया गया एक प्रयोगात्मक ओपन-वर्ल्ड ब्राउज़र ड्राइविंग गेम, जो 1990 के दशक के अंत के PC ड्राइविंग गेम्स की अराजक और स्वतंत्र भावना से प्रेरित है।
 
