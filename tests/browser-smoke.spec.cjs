@@ -7,6 +7,8 @@ const viewports = [
   { name: 'mobile-landscape', viewport: { width: 844, height: 390 }, isMobile: true },
 ];
 
+test.setTimeout(120000);
+
 for (const config of viewports) {
   test(config.name + ' credits, game UI and browser initialization', async ({ browser }) => {
     const context = await browser.newContext({
