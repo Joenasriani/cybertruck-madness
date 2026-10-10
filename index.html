@@ -302,6 +302,29 @@
             z-index: 200;
         }
 
+        /* Contributor recognition panel. Preserve the existing HUD and gameplay. */
+        #credits-overlay {
+            position: fixed; inset: 0; z-index: 300;
+            display: none; align-items: center; justify-content: center;
+            box-sizing: border-box; padding: 20px;
+            background: rgba(0, 0, 0, 0.86); color: #fff;
+            pointer-events: auto;
+        }
+        #credits-overlay.is-open { display: flex; }
+        .credits-panel {
+            width: min(460px, 100%); max-height: calc(100dvh - 40px);
+            overflow-y: auto; box-sizing: border-box; padding: 22px;
+            background: #101010; border: 2px solid #ffcc00;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        .credits-panel h2 { margin: 0 0 14px; color: #ffcc00; font-size: 19px; }
+        .credits-panel h3 { margin: 14px 0 6px; color: #ffcc00; font-size: 13px; }
+        .credits-panel p, .credits-panel li {
+            margin: 0 0 8px; color: #fff; font-size: 12px; line-height: 1.5;
+        }
+        .credits-panel ul { padding-left: 18px; margin: 4px 0 12px; }
+        .credits-panel a { color: #ffcc00; }
+        .credits-panel .hud-btn { margin-top: 9px; }
         /* --- MOBILE OVERLAP FIX --- */
         @media screen and (max-width: 768px) {
             #ui-layer {
@@ -366,6 +389,25 @@
         <div class="hud-btn" onclick="location.reload()" style="margin-top:20px; display:inline-block;">REPLAY</div>
     </div>
 
+    <!-- Community credits. Entries are added only after asset or code acceptance. -->
+    <div id="credits-overlay" role="dialog" aria-modal="true" aria-hidden="true" aria-labelledby="credits-heading">
+        <section class="credits-panel">
+            <h2 id="credits-heading">CYBERTRUCK MADNESS '98</h2>
+            <h3>GAME DEVELOPMENT</h3>
+            <p>Joenasriani</p>
+            <h3>3D VEHICLE MODELS</h3>
+            <ul id="vehicle-credit-list"><li>Awaiting first verified community model.</li></ul>
+            <h3>DEVELOPMENT &amp; INTEGRATION CONTRIBUTORS</h3>
+            <ul id="developer-credit-list"><li>New contributors will be credited after acceptance.</li></ul>
+            <h3>OPEN SOURCE &amp; RIGHTS</h3>
+            <p>Game code: MIT License. Vehicle, music and other assets: separate rights; see
+                <a href="https://github.com/Joenasriani/cybertruck-madness/blob/main/ASSETS.md" target="_blank" rel="noopener noreferrer">ASSETS.md</a>.
+            </p>
+            <p>Unofficial fan project. Not affiliated with or endorsed by Tesla.</p>
+            <button type="button" id="credits-close-btn" class="hud-btn">BACK TO GAME</button>
+        </section>
+    </div>
+
     <!-- LEFT HEADER -->
     <div id="ui-layer">
         <h1>CYBERTRUCK MADNESS '98</h1>
@@ -387,7 +429,8 @@
         <div id="music-indicator" class="hud-btn">MUSIC: ON</div>
         <div id="sfx-indicator" class="hud-btn">SFX: ON</div>
         
-        <div id="objective-text">RINGS: 0 / 500</div>
+        <button type="button" id="credits-toggle-btn" class="hud-btn">CREDITS</button>
+                <div id="objective-text">RINGS: 0 / 500</div>
     </div>
 
     <!-- COMPASS NAV -->
@@ -701,6 +744,45 @@
             }
         };
 
+        // Add entries only after contributor acceptance and rights checks.
+        // For each model, also update ASSETS.md and the README credits.
+        const communityCredits = {
+            models: [], // Example after approval: { model: 'Retro Truck', contributor: 'CreatorName' }
+            developers: [] // Example after approval: { role: '3D integration', contributor: 'CreatorName' }
+        };
+
+        function renderCommunityCredits() {
+            function populate(listId, entries, emptyText, formatEntry) {
+                const list = document.getElementById(listId);
+                list.replaceChildren();
+                if (!entries.length) {
+                    const item = document.createElement('li');
+                    item.textContent = emptyText;
+                    list.appendChild(item);
+                    return;
+                }
+                for (const entry of entries) {
+                    const item = document.createElement('li');
+                    item.textContent = formatEntry(entry);
+                    list.appendChild(item);
+                }
+            }
+            populate('vehicle-credit-list', communityCredits.models,
+                'Awaiting first verified community model.',
+                entry => entry.model + ' – ' + entry.contributor);
+            populate('developer-credit-list', communityCredits.developers,
+                'New contributors will be credited after acceptance.',
+                entry => entry.role + ' – ' + entry.contributor);
+        }
+
+        function setCreditsVisible(visible) {
+            const overlay = document.getElementById('credits-overlay');
+            overlay.classList.toggle('is-open', visible);
+            overlay.setAttribute('aria-hidden', String(!visible));
+            if (visible) renderCommunityCredits();
+            document.getElementById(visible ? 'credits-close-btn' : 'credits-toggle-btn').focus();
+        }
+
         function init() {
             const container = document.getElementById('canvas-container');
             scene = new THREE.Scene(); scene.background = new THREE.Color(0x87CEEB); scene.fog = new THREE.Fog(0xdcb183, 20, 200); 
@@ -740,6 +822,17 @@
 
             const closeMapBtn = document.getElementById('close-map-btn');
             closeMapBtn.addEventListener('click', (e) => { e.stopPropagation(); toggleMap(); });
+
+            document.getElementById('credits-toggle-btn').addEventListener('click', () => setCreditsVisible(true));
+            document.getElementById('credits-close-btn').addEventListener('click', () => setCreditsVisible(false));
+            document.getElementById('credits-overlay').addEventListener('click', (event) => {
+                if (event.target === event.currentTarget) setCreditsVisible(false);
+            });
+            document.addEventListener('keydown', event => {
+                if (event.key === 'Escape' && document.getElementById('credits-overlay').classList.contains('is-open')) {
+                    setCreditsVisible(false);
+                }
+            });
 
             controls.init(); 
             animate();
